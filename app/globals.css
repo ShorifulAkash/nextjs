@@ -25,3 +25,9 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+/* active menu */
+.active {
+  color: black;
+  font-weight: 500;;
+}
