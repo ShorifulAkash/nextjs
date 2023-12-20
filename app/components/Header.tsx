@@ -8,7 +8,6 @@ import React from 'react'
 export const Header = () => {
     const pathname = usePathname()
 
-
     return (
         <header className="bg-gray-400 py-4">
             <div className="lg:container max-w-7xl px-4 sm:px-6 md:px-10 lg:px-14 xl:px-24 mx-auto">

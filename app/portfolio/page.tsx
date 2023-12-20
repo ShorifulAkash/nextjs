@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import { Hero } from '../components/Hero'
 
 export const metadata: Metadata = {
     title: 'Portfolio | Next JS',
@@ -7,15 +8,14 @@ export const metadata: Metadata = {
 }
 
 const PortfolioPage = () => {
-  return (
-    <div className='h-screen flex items-center justify-center'>
-      <div className="lg:container max-w-7xl px-4 sm:px-6 md:px-10 lg:px-14 xl:px-24 mx-auto">
-        <h1 className="text-5xl font-bold">
-          Portfolio page
-        </h1>
-      </div>
-    </div>
-  )
+    return (
+        <>
+            <Hero 
+                title="Portfolio"
+                subtitle=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ducimus culpa placeat laudantium nostrum assumenda sit excepturi ullam perspiciatis! Facilis."
+            />
+        </>
+    )
 }
 
 export default PortfolioPage
