@@ -17,35 +17,38 @@ export const Header = () => {
                     </div>
                     <ul className="text-base text-gray-100 font-medium flex items-center gap-4">
                         <li>
-                            <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}>
+                            <Link href="/" className={pathname === '/' ? 'active' : ''}>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}>
+                            <Link href="/about" className={pathname === '/about' ? 'active' : ''}>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/portfolio" className={`link ${pathname === '/portfolio' ? 'active' : ''}`}>
+                            <Link href="/portfolio" className={pathname === '/portfolio' ? 'active' : ''}>
                                 Portfolio
                             </Link>
                         </li>
                         <li>
-                            <Link href="/blog" className={`link ${pathname === '/blog' ? 'active' : ''}`}>
+                            <Link href="/blog" className={pathname === '/blog' ? 'active' : ''}>
                                 Blog
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''}`}>
+                            <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>
                                 Contact
                             </Link>
                         </li>
                     </ul>
                     <div className="">
-                        <Link href="/discover" className={`link ${pathname === '/discover' ? 'active' : ''}`}>
+                        <Link href="/discover" className={pathname === '/discover' ? 'active' : ''}>
                             Discover
                         </Link>
+                        {/* <Link href="/discover" className={`${pathname === '/discover' ? 'active' : ''}`}>
+                            Discover
+                        </Link> */}
                     </div>
                 </div>
             </div>
